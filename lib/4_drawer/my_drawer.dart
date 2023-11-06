@@ -3,6 +3,8 @@ import 'package:flutter_widgets/4_drawer/pages/favorites_page.dart';
 import 'package:flutter_widgets/4_drawer/pages/notifications_page.dart';
 import 'package:flutter_widgets/4_drawer/pages/privacy_policy_page.dart';
 
+import '../homePage.dart';
+
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
 
@@ -57,6 +59,11 @@ class MyDrawer extends StatelessWidget {
               const Divider(color: Colors.white,),
               _listItem(icon: Icons.help, title: "Help", onTap: () {} ),
               _listItem(icon: Icons.report, title: "Report", onTap: () {} ),
+              _listItem(icon: Icons.home, title: "HomePage", onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (_) => MyHomePage())
+                );
+              } ),
 
             ],
           ),

@@ -50,6 +50,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
                 child: const Text("My Drawer"),
               ),
+              const SizedBox(height: 20,),
+              ElevatedButton(
+                onPressed: (){
+                  Navigator.pushNamed(context, "my_tabbar");
+                },
+                child: const Text("My TabBar"),
+              ),
             ],
           ),
         ),

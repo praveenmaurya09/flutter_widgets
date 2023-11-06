@@ -5,6 +5,7 @@ import 'package:flutter_widgets/1_routes/page_one.dart';
 import 'package:flutter_widgets/2_snackbar/snaackbar.dart';
 import 'package:flutter_widgets/3_bottom_navigationbar/bottom_navigationbar.dart';
 import 'package:flutter_widgets/4_drawer/my_drawer.dart';
+import 'package:flutter_widgets/5_tabbar/my_tabbar.dart';
 
 import 'homePage.dart';
 
@@ -58,6 +59,9 @@ class OnGenerateRoute {
       }
       case "my_drawer": {
         return MaterialPageRoute(builder: (context) => MyDrawer() );
+      }
+      case "my_tabbar": {
+        return MaterialPageRoute(builder: (context) => MyTabBarPage() );
       }
       default: {
         Scaffold();
