@@ -20,8 +20,9 @@ class _MyHomePageState extends State<MyHomePage> {
         padding: const EdgeInsets.all(8.0),
         child: SizedBox(
           width: double.infinity,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
+          child: ListView(
+            padding: const EdgeInsets.symmetric(horizontal: 50),
+            // crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               ElevatedButton(
                 onPressed: (){
@@ -56,6 +57,41 @@ class _MyHomePageState extends State<MyHomePage> {
                   Navigator.pushNamed(context, "my_tabbar");
                 },
                 child: const Text("My TabBar"),
+              ),
+              const SizedBox(height: 20,),
+              ElevatedButton(
+                onPressed: (){
+                  Navigator.pushNamed(context, "popupmenu");
+                },
+                child: const Text("PopUpMenu"),
+              ),
+              const SizedBox(height: 20,),
+              ElevatedButton(
+                onPressed: (){
+                  Navigator.pushNamed(context, "radiobutton");
+                },
+                child: const Text("Radio Button"),
+              ),
+              const SizedBox(height: 20,),
+              ElevatedButton(
+                onPressed: (){
+                  Navigator.pushNamed(context, "checkbox");
+                },
+                child: const Text("Check Box"),
+              ),
+              const SizedBox(height: 20,),
+              ElevatedButton(
+                onPressed: (){
+                  Navigator.pushNamed(context, "switchbutton");
+                },
+                child: const Text("Switch Button"),
+              ),
+              const SizedBox(height: 20,),
+              ElevatedButton(
+                onPressed: (){
+                  Navigator.pushNamed(context, "routes");
+                },
+                child: const Text("ButtonName"),
               ),
             ],
           ),
