@@ -1,6 +1,10 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets/10_alertdialog/alert_dialog.dart';
+import 'package:flutter_widgets/12_dropdown/dropdown.dart';
+import 'package:flutter_widgets/13_bottomsheet/bottom_sheet.dart';
+import 'package:flutter_widgets/14_form_validation/form_validation.dart';
 import 'package:flutter_widgets/1_routes/page_one.dart';
 import 'package:flutter_widgets/2_snackbar/snaackbar.dart';
 import 'package:flutter_widgets/3_bottom_navigationbar/bottom_navigationbar.dart';
@@ -11,6 +15,7 @@ import 'package:flutter_widgets/7_radiobutton/radiobuttton.dart';
 import 'package:flutter_widgets/8_checkbok/checkbok.dart';
 import 'package:flutter_widgets/9_switchbutton/switchbutton.dart';
 
+import '11_card/card.dart';
 import 'homePage.dart';
 
 void main() {
@@ -78,6 +83,24 @@ class OnGenerateRoute {
       }
       case "switchbutton": {
         return MaterialPageRoute(builder: (context) => const SwitchButtonPage() );
+      }
+      case "alertdialog": {
+        return MaterialPageRoute(builder: (context) => const AlertDialogPage() );
+      }
+      case "card": {
+        return MaterialPageRoute(builder: (context) => const MyCardPage() );
+      }
+      case "card": {
+        return MaterialPageRoute(builder: (context) => const MyCardPage() );
+      }
+      case "dropdown": {
+        return MaterialPageRoute(builder: (context) => const DropDownPage() );
+      }
+      case "bottomsheet": {
+        return MaterialPageRoute(builder: (context) => const ModalBottomSheetPage() );
+      }
+      case "formvalidation": {
+        return MaterialPageRoute(builder: (context) => const FormValidationPage() );
       }
       default: {
         Scaffold();

@@ -89,10 +89,49 @@ class _MyHomePageState extends State<MyHomePage> {
               const SizedBox(height: 20,),
               ElevatedButton(
                 onPressed: (){
+                  Navigator.pushNamed(context, "alertdialog");
+                },
+                child: const Text("Alert Dialog"),
+              ),
+              const SizedBox(height: 20,),
+              ElevatedButton(
+                onPressed: (){
+                  Navigator.pushNamed(context, "card");
+                },
+                child: const Text("Flutter Card"),
+              ),
+              const SizedBox(height: 20,),
+              ElevatedButton(
+                onPressed: (){
+                  Navigator.pushNamed(context, "dropdown");
+                },
+                child: const Text("DropDown"),
+              ),
+              const SizedBox(height: 20,),
+              ElevatedButton(
+                onPressed: (){
+                  Navigator.pushNamed(context, "bottomsheet");
+                },
+                child: const Text("Bottom Sheet"),
+              ),
+              const SizedBox(height: 20,),
+              ElevatedButton(
+                onPressed: (){
+                  Navigator.pushNamed(context, "formvalidation");
+                },
+                child: const Text("Form Validation"),
+              ),
+              const SizedBox(height: 20,),
+              ElevatedButton(
+                onPressed: (){
                   Navigator.pushNamed(context, "routes");
                 },
-                child: const Text("ButtonName"),
+                child: const Text("Button Text"),
               ),
+
+
+
+
             ],
           ),
         ),
